@@ -1,5 +1,4 @@
 
-
 class MultiScorer():
 	'''
 	Use this class to encapsulate and/or aggregate multiple scoring functions so that it can be passed as an argument for scoring in scikit's cross_val_score function.
