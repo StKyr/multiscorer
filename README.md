@@ -31,7 +31,7 @@ scorer = MultiScorer({
 
 cross_val_score(clf, X, target, scoring=scorer )
 
-results = scorer.getResults()
+results = scorer.get_results()
 
 for metric in results.keys():
   print("%s: %.3f" % (metric, results[metric]))
