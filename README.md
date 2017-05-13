@@ -21,24 +21,27 @@ From a Python script, you can write:
 from multiscorer import MultiScorer
 
 #Scikit's libraries for demonstration
-from sklearn.metrics import *
+from sklearn.metrics import accuracy_score, precision_score
 from sklearn.model_selection import cross_val_score
+from numpy import average
 
 scorer = MultiScorer({
   'accuracy': (accuracy_score, {}),
   'precision': (precision_score, {'average': 'macro'})
 })
 
+...
+
 cross_val_score(clf, X, target, scoring=scorer )
 
 results = scorer.get_results()
 
 for metric in results.keys():
-  print("%s: %.3f" % (metric, results[metric]))
+  print("%s: %.3f" % (metric, average(results[metric])))
 
 ```
 
 ## Notes
 - You can also use your own custom metric functions.
 - For a full documentation see Wiki
-- Original documentation of SciKit: 
+- Original documentation of SciKit:
