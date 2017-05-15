@@ -45,7 +45,7 @@ class MultiScorer():
 		for key in self.metrics.keys():
 			metric, kwargs = self.metrics[key]
 
-			self.results[key] = metric(y, yPred, **kwargs)
+			self.results[key].append(metric(y, yPred, **kwargs))
 
 		self._called = True
 
