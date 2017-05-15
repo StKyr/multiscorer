@@ -1,18 +1,18 @@
 # multiscorer
 #### A module for allowing the use of multiple metric functions in scikit's `cross_val_score`.
 
-As it has been discussed, Python's _SciKit_, while it contains a great functionality for computing evaluation metrics of estimators (using cross_val_score),
-it seems to fail when it comes to computing multiple metrics for the same classifier without trainning it again
+As it has been discussed, Python's _SciKit_, while it contains a great functionality for computing evaluation metrics of estimators (using **cross_val_score**),
+it seems to fail when it comes to computing multiple metrics for the same classifier without trainning it again.
 
 The problem arises because of the `scoring` parameter of the function which accepts only a single metric name or a single callable.
 
-Module _multiscorer_ of this repo, is a workaround for using any number of metrics in _cross_eval_score_.
+Module _multiscorer_ of this repo, is a workaround for using any number of metrics in *cross_val_score*.
 
 
 ## Installation
 
-To "install" the module simply download the source code and place it in your project's directory.
-(Alternativelly, download and add to your project just _multiscorer.py_ file.
+To "install" the module simply download the source code and place it in your project's directory.  
+(*Alternativelly, download and add to your project just **multiscorer.py** file*).
 
 ## Usage
 
