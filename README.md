@@ -42,6 +42,11 @@ for metric in results.keys():
 ```
 
 ## Notes
-- You can also use your own custom metric functions.
-- For a full documentation see Wiki
-- Original documentation of SciKit:
+- You can get results only from specific metrics and/or specific folds.
+- You can also use your own custom metric functions ([see how](https://github.com/StKyr/multiscorer/wiki/Examples#using-custom-metrics-in-multiscorer)).
+- For a full documentation see [Wiki](https://github.com/StKyr/multiscorer/wiki)
+- Original documentation of SciKit: http://scikit-learn.org/stable/
+
+## Development and Contributing
+This module was something I had the need for while working with Scikit's libraries and I just thought it might help somebody.  
+For questions, bugs, suggestions etc, feel free to contact me or submit a Pull Request.
