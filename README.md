@@ -42,9 +42,9 @@ for metric in results.keys():
 ```
 
 ## Notes
-- You can get results only from specific metrics and/or specific folds.
+- You can get results only from specific metrics and/or specific folds ([see examples] (https://github.com/StKyr/multiscorer/wiki/Examples) ).
 - You can also use your own custom metric functions ([see how](https://github.com/StKyr/multiscorer/wiki/Examples#using-custom-metrics-in-multiscorer)).
-- For a full documentation see [Wiki](https://github.com/StKyr/multiscorer/wiki)
+- For a full documentation see [Wiki](https://github.com/StKyr/multiscorer/wiki).
 - Original documentation of SciKit: http://scikit-learn.org/stable/
 
 ## Development and Contributing
