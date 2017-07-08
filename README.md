@@ -20,23 +20,22 @@ From a Python script, you can write:
 ```Python
 from multiscorer import MultiScorer
 
-#Scikit's libraries for demonstration
-from sklearn.metrics import accuracy_score, precision_score
+from sklearn.metrics import accuracy_score, precision_score          # Scikit's libraries for demonstration
 from sklearn.model_selection import cross_val_score
 from numpy import average
 
-scorer = MultiScorer({
+scorer = MultiScorer({                                               # Create a MultiScorer instance
   'accuracy': (accuracy_score, {}),
-  'precision': (precision_score, {'average': 'macro'})
+  'precision': (precision_score, {'average': 'macro'})               # Param 'average' will be passed to precision_score as kwarg 
 })
 
 ...
 
-cross_val_score(clf, X, target, scoring=scorer )
+cross_val_score(clf, X, target, scoring=scorer)                      # Use the function with our socrer. Ignore its result 
 
-results = scorer.get_results()
+results = scorer.get_results()                                       # Get a dict of lists containing the scores for each metric
 
-for metric in results.keys():
+for metric in results.keys():                                        # Iterate and use the results
   print("%s: %.3f" % (metric, average(results[metric])))
 
 ```
