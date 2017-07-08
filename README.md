@@ -14,7 +14,7 @@ Module _multiscorer_ of this repo, is a workaround for using any number of metri
 To "install" the module simply download the source code and place it in your project's directory.  
 (*Alternativelly, download and add to your project just **multiscorer.py** file*).
 
-## Usage
+## Usage (Quickstart example)
 
 From a Python script, you can write:
 ```Python
