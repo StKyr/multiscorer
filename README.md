@@ -31,7 +31,7 @@ scorer = MultiScorer({                                               # Create a 
 
 ...
 
-cross_val_score(clf, X, target, scoring=scorer)                      # Use the function with our socrer. Ignore its result 
+cross_val_score(clf, X, target, scoring=scorer, cv=10)               # Use the function with our socrer. Ignore its result 
 
 results = scorer.get_results()                                       # Get a dict of lists containing the scores for each metric
 
